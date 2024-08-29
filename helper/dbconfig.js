@@ -18,6 +18,7 @@ class DatabaseConfig {
 
     getConnection() {
         if (!this.connection) this.createConnection();
+        console.log("db is connected...")
         return this.connection;
     }
 
